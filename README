@@ -1,0 +1,17 @@
+Setup Method:
+Extract Node Module ZIP in server
+Install Node JS
+Install MongoDB Community Server
+Install MongoDB Database Tools
+Go to cmd administrator mode
+type in " cd C:\path\Fresh-and-Found-main\server"
+type in "mongorestore ../backup"
+type in "node server.js"
+Enter localhost:3000 in your website
+
+-----------------------------------------
+
+Special Thanks to:
+Unsplash
+Font Awesome
+
