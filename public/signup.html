@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" href="assets/css/login.css">
+  <link rel="stylesheet" href="assets/css/top_popup.css">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/css/images/Fresh_and_Found_logo.png"/>
+  <script src="https://kit.fontawesome.com/63f7bed6ec.js" crossorigin="anonymous"></script>
+  <script src="assets/js/auth.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <div class="header">
+        <h1 class="logo">Fresh & Found</h1>
+        <a href="index.html" class="back-button">Back to website &rarr;</a>
+      </div>
+      <div class="content">
+        <p class="tagline">Harvested Fresh,<br>Found with Care.</p>
+      </div>
+    </div>
+    <div class="right-panel">
+      <div class="form-container">
+        <h2>Create an account</h2>
+        <p>Already have an account? <a href="login.html">Log in</a></p>
+        <form id="signupForm">
+          <input type="text" placeholder="Username" name="username" required>
+          <input type="email" placeholder="Email" name="email" required>
+          <div class="password-group">
+            <input type="password" placeholder="Enter your password" name="password" required style="margin-bottom: 0;">
+            <span class="show-password" onclick="togglePassword()">
+              <i class="fa-regular fa-eye"></i>
+            </span>
+          </div>
+          <p id="error"></p>
+          <button id="openSignupBtn" type="submit" class="create-button" style="margin-top: 15px;">Create account</button>
+        </form>        
+      </div>
+    </div>
+  </div>
+
+  <!-- Popup message for success -->
+  <div id="popup" class="popup">
+    SignUp successful!
+</div>
+
+</body>
+</html>

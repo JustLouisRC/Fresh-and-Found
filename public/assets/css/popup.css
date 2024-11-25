@@ -1,0 +1,244 @@
+/* Universal reset and box-sizing */ 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Popup container styling */
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup * {
+  color: #000;
+}
+
+.rating * {
+  color: #666;
+}
+
+.popup-content {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px 15px 0 0;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.3s ease-out;
+  max-height: 90vh; /* Limit the height to 90% of the viewport height */
+  overflow-y: auto; /* Allow scrolling when content overflows */
+}
+
+/* Popup slide-up animation */
+@keyframes slideUp {
+  from {
+    transform: translate(-50%, 100%);
+  }
+  to {
+    transform: translate(-50%, 0);
+  }
+}
+
+/* Close button */
+.close {
+  color: #888;
+  float: right;
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
+}
+
+/* Product details container */
+.product-details {
+  text-align: center;
+}
+
+/* Navigation bar */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+/* Product image styling */
+.product-image img {
+  width: 100%;
+  max-width: 300px;
+  max-height: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Product types */
+.product-types {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.product-types button {
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-types .active {
+  background-color: #000;
+  color: #fff;
+}
+
+.product-text {
+  min-width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Product information */
+.product-info {
+  margin: 20px 0;
+}
+
+.product-info h3 {
+  color: #888;
+  font-size: 1.125rem;
+}
+
+.product-info h1 {
+  font-size: 26px;
+  margin: 10px 0;
+}
+
+.product-info p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 10px 0 20px;
+  line-height: 1.6;
+}
+
+/* Ratings */
+.ratings {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.rating-item {
+  background-color: #f1f1f1;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Add to cart section */
+.add-to-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-top: 1px solid #eee;
+}
+
+.add-to-cart button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 0 1.25rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart button:hover {
+  background-color: #333;
+}
+
+.price {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+/* Media Queries */
+
+/* For mobile and small screens */
+@media (max-width: 768px) {
+  .popup-content {
+    width: 90%;
+    max-width: none;
+    max-height: 90vh; /* Limit the height to 90% of the viewport height */
+    overflow-y: auto; /* Enable scrolling when content exceeds the height */
+  }
+}
+
+/* For larger screens */
+@media (min-width: 1024px) {
+  .product-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .popup-content {
+    min-width: 100%;
+    padding: 30px 50px;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  /* Adjustments to keep the image visible and prevent shrinking */
+  .product-image {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 30px;
+  }
+
+  .product-image img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    max-height: 300%;
+  }
+
+  .product-info {
+    flex: 2;
+  }
+
+  .product-text{
+    max-width: 45%;
+
+  }
+}

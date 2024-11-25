@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="assets/css/login.css">
+  <link rel="stylesheet" href="assets/css/top_popup.css">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/css/images/Fresh_and_Found_logo.png"/>
+
+
+  <script src="https://kit.fontawesome.com/63f7bed6ec.js" crossorigin="anonymous"></script>
+  <script src="assets/js/auth.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="left-panel">
+        <div class="header">
+          <h1 class="logo">Fresh & Found</h1>
+          <a href="index.html" class="back-button">Back to website &rarr;</a>
+        </div>
+        <div class="content">
+          <p class="tagline">Harvested Fresh,<br>Found with Care.</p>
+        </div>
+      </div>
+
+    <div class="right-panel">
+      <div class="form-container">
+        <h2>Login</h2>
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+        <form id="loginForm" action="/login" method="post">
+          <input type="email" placeholder="Email" name="email" required>
+          <div class="password-group">
+            <input type="password" placeholder="Enter your password" name="password" required style="margin-bottom: 0;">
+            <span class="show-password" onclick="togglePassword()">
+              <i class="fa-regular fa-eye"></i>
+            </span>
+          </div>
+          <p id="error"></p>
+          <button type="submit" class="create-button" style="margin-top: 15px;">Log In</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Popup message for success -->
+  <div id="popup" class="popup">
+        Login successful!
+  </div>
+</body>
+</html>

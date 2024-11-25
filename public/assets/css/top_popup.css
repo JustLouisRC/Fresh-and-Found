@@ -1,0 +1,22 @@
+.popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: auto;
+    color: var(--background-dark);
+    text-align: center;
+    background-color: var(--accent-green);
+
+    z-index: 100000;
+
+    width: 100vw;
+    height: 5vh;
+
+    position: absolute;
+    top: -250px;
+
+    border-radius: 0 0 12px 12px;
+
+    transition: top 0.5s ease; 
+  }

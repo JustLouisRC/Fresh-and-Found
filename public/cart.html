@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <script src="https://kit.fontawesome.com/63f7bed6ec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/css/cart.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/top_popup.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/css/images/Fresh_and_Found_logo.png"/>
+</head>
+<body>
+    <header id="header" class="alt">
+        <h1><a href="index.html">Fresh & Found</a></h1>
+        <nav id="nav">
+            <ul>
+                <li class="special">
+                    <a href="#menu" class="menuToggle"><span>Let the Hunt Begin</span></a>
+                    <div id="menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="vegan-diet.html">Vegan Options</a></li>
+                            <li><a href="non_vegan-diet.html">Non Vegan Options</a></li>
+                        </ul>
+                        <div id="menu-bottom">
+                            <div id="user-details">
+                                <i class="fa-solid fa-circle-user fa-xl"></i>
+                                <h4  id="username">Loading...</h4>
+                            </div>
+                            <a href="cart.html" id="cart-button" class="fa-solid fa-basket-shopping fa-xl"></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="page-wrapper">
+        <div class="cart-container">
+            <table id="cart-table">
+                <thead>
+                    <tr>
+                        <th>PRODUCT</th>
+                        <th>QUANTITY</th>
+                        <th>PRICE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Cart items will be inserted here dynamically -->
+                </tbody>
+            </table>
+
+            <aside class="summary">
+                <h2>Summary</h2>
+                <p>Subtotal: <span id="subtotal">$0.00</span></p>
+                <p>Discount: <span>$0</span></p>
+                <p id="donate">Support "Stand For Trees" <span>$1</span></p>
+                <p class="total">Grand Total: <span id="grand-total">$0.00</span></p>
+                <button class="checkout">Checkout</button>
+            </aside>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">Your Order was Successful</div>
+
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/cart.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/userdetail.js"></script>
+</body>
+</html>

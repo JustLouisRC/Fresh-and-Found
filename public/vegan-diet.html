@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vegan Diet Options|Fresh & Found</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/popup.css">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/css/images/Fresh_and_Found_logo.png"/>
+    <script src="https://kit.fontawesome.com/a52940db7d.js" crossorigin="anonymous"></script>   
+</head>
+<body class="landing is-preload" data-page-type="vegan">
+
+<!-- Header -->
+<div class="landing page-wrapper">
+
+    <!-- Navigation Bar -->
+    <header id="header" class="alt">
+        <!-- Logo -->
+        <h1><a href="index.html">Fresh & Found</a></h1>
+        <!-- Nav -->
+        <nav id="nav">
+            <ul>
+                <li class="special">
+                    <a href="#menu" class="menuToggle"><span>Let the Hunt Begin</span></a>
+                    <div id="menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="vegan-diet.html">Vegan Options</a></li>
+                            <li><a href="non_vegan-diet.html">Non Vegan Options</a></li>
+                        </ul>
+                        <div>
+                            <div id="user-details">
+                                <i class="fa-solid fa-circle-user fa-xl"></i>
+                                <h4  id="username">Loading...</h4>
+                            </div>
+                            <a href="cart.html" id= "cart-button"class="fa-solid fa-basket-shopping fa-xl" ></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- Hero Banner -->
+<div class="banner vegan-hero">
+    <div class="inner">
+            <h1>Grab Up to <span>50%</span> Off On Selected Produce</h1>
+            <a href="#">
+              <button class="button primary">Buy Now</button>
+            </a>
+    </div>
+</div>
+
+<!-- Product Grid -->
+<section class="wrapper product-grid" id="product-grid">
+
+</section>
+
+<!-- Popup -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+      <div class="product-details">
+          <!-- Close Button -->
+          <div class="nav-bar">
+              <span class="close" id="closePopup">&times;</span>
+          </div>
+
+          <div class="product-description">
+              <div class="product-image">
+                  <img id="popup-image" src="images/meat.jpg" alt="Product Image">
+              </div>
+
+              <div class="product-text">
+                  <!-- Type Options -->
+                  <div class="product-types">
+                      <button class="type-btn" data-size="4.5Y">4.5Y</button>
+                      <button class="type-btn active" data-size="5.5Y">5.5Y</button>
+                      <button class="type-btn" data-size="6.5Y">6.5Y</button>
+                  </div>
+
+                  <!-- Product Info -->
+                  <div class="product-info">
+                      <h3 id="popup-producer"></h3>
+                      <h1 id="popup-title">Product Name</h1>
+                      <p id="popup-description">Product Description</p>
+                      <div class="ratings">
+                          <div class="rating-item">4.6 / 5</div>
+                          <div class="rating-item">Comfort</div>
+                          <div class="rating-item">Durable</div>
+                          <div class="rating-item">Adaptive</div>
+                      </div>
+                  </div>
+
+                  <!-- Add to Cart Section -->
+                  <div class="add-to-cart">
+                      <div class="quantity-control">
+                          <button id="decreaseQuantity">-</button>
+                          <span id="quantityDisplay">1</span>
+                          <button id="increaseQuantity">+</button>
+                      </div>
+                      <button id="addToCartBtn">Add to Cart</button>
+                      <span class="price" id="popup-price">$27.00</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer id="footer">
+    <ul class="icons">
+        <li><a href=""><i class="fa-brands fa-twitter fa-lg"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-facebook fa-lg"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-instagram fa-lg"></i></a></li>
+        <li><a href=""><i class="fa-solid fa-envelope fa-lg"></i></a></li>
+    </ul>
+    <ul class="footer_bot">
+        <li>&copy; 2024 Fresh & Found. All rights reserved.</li>
+    </ul>
+</footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/fetchproduct.js"></script>
+<script src="assets/js/userdetail.js"></script>
+
+
+</body>
+</html>
